@@ -6,7 +6,6 @@ Installs AWS CloudWatch Log Agent
 Requirements
 ------------
 
-Requires ec2_facts.
 
 Role Variables
 --------------
