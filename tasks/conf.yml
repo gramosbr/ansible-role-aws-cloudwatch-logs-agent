@@ -1,16 +1,5 @@
 ---
 
-- debug:
-  msg: ansible_version.string 
-
-- name: gather EC2 facts
-  ec2_facts:
-  when: ansible_version.string < "2.4"
-
-- name: gather EC2 facts
-  ec2_metadata_facts:
-  when: ansible_version.string >= "2.4"
-
 - name: "Make /var/awslogs/state/ directory"
   file:
     path: /var/awslogs/state/
