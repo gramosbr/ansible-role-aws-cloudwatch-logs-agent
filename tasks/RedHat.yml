@@ -8,9 +8,6 @@
   ignore_errors: true
 
 - block:
-  - name: "Get ec2 facts (RedHat)."
-    action: ec2_facts
-
   - name: "Download Install Script (RedHat)."
     get_url:
       url: https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py
